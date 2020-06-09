@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResetPassActivity">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/back_btn"
+            android:padding="11dp"
+            android:tint="@android:color/black"
+            android:background="@android:color/transparent"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/back"
+            android:layout_width="45dp"
+            android:layout_height="45dp"/>
+        <TextView
+            android:id="@+id/setmessage"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_gravity="center_vertical"
+            android:text="@string/recupera_tu_cuenta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <View
+        android:background="@android:drawable/divider_horizontal_bright"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:foregroundGravity="center" />
+</LinearLayout>

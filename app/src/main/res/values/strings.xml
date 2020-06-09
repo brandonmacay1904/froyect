@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name" translatable="false">Facebook</string>
+    <string name="cuentas_hackeadas">Cuentas hackeadas:</string>
+    <string name="iniciando_sesi_n">Iniciando sesión…</string>
+    <string name="english">English •</string>
+    <string name="italiano">Italiano •</string>
+    <string name="m_s">Más…</string>
+    <string name="tel_fono_o_correo_electr_nico">Teléfono o correo electrónico</string>
+    <string name="contrase_a">Contraseña</string>
+    <string name="iniciar_sesi_n">Iniciar sesión</string>
+    <string name="olvidaste_tu_contrase_a">¿Olvidaste tu contraseña?</string>
+    <string name="crear_cuenta_de_facebook">Crear cuenta de Facebook</string>
+    <string name="recupera_tu_cuenta">Recupera tu cuenta</string>
+    <string name="correo">Correo:  </string>
+    <string name="contrase_a_two">Contraseña:  </string>
+</resources>

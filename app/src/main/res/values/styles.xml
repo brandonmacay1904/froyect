@@ -1,0 +1,28 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@android:color/white</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="23">true</item>
+    </style>
+    <style name="AppThemeLogin" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+    <style name="SplashTheme" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+    </style>
+    <style name="TextInputLayoutAppearance" parent="Widget.Design.TextInputLayout">
+        <!-- reference our hint & error styles -->
+        <item name="colorPrimaryDark">@color/azulfuerte</item>
+        <item name="colorControlActivated">@color/azulfuerte</item>
+        <item name="colorPrimary">@color/azulfuerte</item>
+
+    </style>
+</resources>

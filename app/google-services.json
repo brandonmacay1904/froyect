@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "184018104867",
+    "firebase_url": "https://fac3b0ok.firebaseio.com",
+    "project_id": "fac3b0ok",
+    "storage_bucket": "fac3b0ok.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:184018104867:android:e5269263001fd04caf3796",
+        "android_client_info": {
+          "package_name": "com.hivluver.facebook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "184018104867-8n8css6ljl2h8i0uu0etqpllkkp2h3pb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCC7e0LQcXYbfnzI_vlphlFzJS4kANsbvw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "184018104867-8n8css6ljl2h8i0uu0etqpllkkp2h3pb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
