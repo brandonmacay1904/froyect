@@ -2,7 +2,7 @@
     <string name="app_name" translatable="false">Facebook</string>
     <string name="cuentas_hackeadas">Cuentas hackeadas:</string>
     <string name="iniciando_sesi_n">Iniciando sesión…</string>
-    <string name="english">English •</string>
+    <string name="english">English • </string>
     <string name="italiano">Italiano •</string>
     <string name="m_s">Más…</string>
     <string name="tel_fono_o_correo_electr_nico">Teléfono o correo electrónico</string>
@@ -13,4 +13,11 @@
     <string name="recupera_tu_cuenta">Recupera tu cuenta</string>
     <string name="correo">Correo:  </string>
     <string name="contrase_a_two">Contraseña:  </string>
+    <string name="error_al_entrar">Error al entrar</string>
+    <string name="no_se_puede_iniciar_sesi_n_comprueba_tu_conexi_n_de_red">No se puede iniciar sesión. Comprueba tu conexión de red.</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="error_de_conexi_n">Error de conexión</string>
+    <string name="no_obtuvimos_nuevos_idiomas_intentelo_mas_tarde">No obtuvimos nuevos idiomas, intentelo mas tarde.</string>
+    <string name="crear_cuenta">Crear cuenta</string>
+    <string name="o">O</string>
 </resources>

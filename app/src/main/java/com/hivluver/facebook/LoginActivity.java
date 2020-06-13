@@ -28,6 +28,7 @@ public class LoginActivity extends AppCompatActivity {
     Button resetbtn;
     Button registerbtn;
     TextView englishtxt,italiantxt;
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,15 +36,18 @@ public class LoginActivity extends AppCompatActivity {
         emailclick = findViewById(R.id.emailclick);
         passclick = findViewById(R.id.passclick);
         btnsecret =  findViewById(R.id.btnsecrett);
+        btnsecret.setText(" "+getResources().getString(R.string.m_s));
         resetbtn = findViewById(R.id.btnresetaccount);
         registerbtn = findViewById(R.id.registerbtn);
         englishtxt = findViewById(R.id.txtenglish);
         italiantxt = findViewById(R.id.txtitalian);
+        italiantxt.setText(" "+getResources().getString(R.string.italiano));
+
         registerbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(LoginActivity.this,ResetPassActivity.class);
-                intent.putExtra("message","Crear cuenta");
+                intent.putExtra("message",getResources().getString(R.string.crear_cuenta));
                 startActivity(intent);
             }
         });
@@ -51,7 +55,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(LoginActivity.this,ResetPassActivity.class);
-                intent.putExtra("message","Recupera tu cuenta");
+                intent.putExtra("message",getResources().getString(R.string.recupera_tu_cuenta));
                 startActivity(intent);
             }
         });
@@ -66,8 +70,8 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 final KAlertDialog dialog = new KAlertDialog(LoginActivity.this);
-                dialog.setTitleText("Error de conexión");
-                dialog.setContentText("No obtuvimos nuevos idiomas, intentelo mas tarde.");
+                dialog.setTitleText(getResources().getString(R.string.error_de_conexi_n));
+                dialog.setContentText(getResources().getString(R.string.no_obtuvimos_nuevos_idiomas_intentelo_mas_tarde));
                 dialog.confirmButtonColor(R.color.azulfuerte);
                 dialog.setConfirmText("Ok").setConfirmClickListener(new KAlertDialog.KAlertClickListener() {
                     @Override
@@ -109,9 +113,9 @@ public class LoginActivity extends AppCompatActivity {
         italiantxt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (italiantxt.getText().toString().contentEquals("Italiano •")){
+                if (italiantxt.getText().toString().contentEquals(" Italiano •")){
                     setLocale("it");
-                }else if (italiantxt.getText().toString().contentEquals("Español •")){
+                }else if (italiantxt.getText().toString().contentEquals(" Español •")){
                     setLocale("es");
                 }
 
@@ -126,8 +130,9 @@ public class LoginActivity extends AppCompatActivity {
         Configuration conf = res.getConfiguration();
         conf.locale = myLocale;
         res.updateConfiguration(conf, dm);
-        Intent refresh = new Intent(this, MainActivity.class);
-        finish();
+        Intent refresh = new Intent(this, LoginActivity.class);
         startActivity(refresh);
+        finish();
+        overridePendingTransition(0,0);
     }
 }

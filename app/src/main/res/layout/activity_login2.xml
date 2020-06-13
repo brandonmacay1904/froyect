@@ -16,7 +16,8 @@
         android:layout_height="65dp"
         android:layout_gravity="center"
         android:src="@drawable/logo_face_cien"
-        />
+        android:contentDescription="TODO"
+        tools:ignore="ContentDescription,HardcodedText" />
     <LinearLayout
         android:layout_weight="1.5"
         android:layout_marginRight="30dp"
@@ -42,8 +43,7 @@
                 android:hint="@string/tel_fono_o_correo_electr_nico"
                 android:paddingStart="2dp"
                 android:paddingBottom="3dp"
-                tools:ignore="RtlSymmetry"
-                android:paddingLeft="2dp"/>
+                tools:ignore="RtlSymmetry" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -65,8 +65,7 @@
                 android:imeOptions="actionDone"
                 android:paddingBottom="3dp"
                 android:paddingStart="2dp"
-                tools:ignore="RtlSymmetry"
-                android:paddingLeft="2dp" />
+                tools:ignore="RtlSymmetry" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
