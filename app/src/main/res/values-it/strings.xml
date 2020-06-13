@@ -3,8 +3,8 @@
 <string name="cuentas_hackeadas">Conti compromessi:</string>
 <string name="iniciando_sesi_n">Entrando…</string>
 <string name="english">English •</string>
-<string name="italiano">    Español •</string>
-<string name="m_s"> Altro…</string>
+<string name="italiano">Español • </string>
+<string name="m_s">Altro…</string>
 <string name="tel_fono_o_correo_electr_nico">Telefono o indirizzo e-mail</string>
 <string name="contrase_a">Password</string>
 <string name="iniciar_sesi_n">Accedi</string>
@@ -13,4 +13,11 @@
 <string name="recupera_tu_cuenta">Trova il tuo account</string>
 <string name="correo">E-mail:  </string>
 <string name="contrase_a_two">Password:  </string>
+    <string name="error_al_entrar">Errore durante l\'immissione</string>
+    <string name="no_se_puede_iniciar_sesi_n_comprueba_tu_conexi_n_de_red">Non riesci ad accedere. Controlla la tua connessione di rete.</string>
+    <string name="aceptar">Accettare</string>
+    <string name="error_de_conexi_n">Errore di connessione</string>
+    <string name="no_obtuvimos_nuevos_idiomas_intentelo_mas_tarde">Non abbiamo nuove lingue, per favore riprova più tardi.</string>
+    <string name="crear_cuenta">Creare un profilo</string>
+    <string name="o">O</string>
 </resources>

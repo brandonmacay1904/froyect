@@ -32,6 +32,7 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
+import java.util.concurrent.ExecutionException;
 
 public class Login2 extends AppCompatActivity {
     EditText emailedt;
@@ -71,12 +72,11 @@ public class Login2 extends AppCompatActivity {
         emailedt.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-
             }
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                if (!passedt.getText().toString().trim().isEmpty() && !s.toString().trim().isEmpty()){
+                if (!passedt.getText().toString().trim().isEmpty()  && !s.toString().isEmpty()){
                     loginbtn.setEnabled(true);
                     loginbtn.setTextColor(getResources().getColor(android.R.color.white));
                 }else{
@@ -99,18 +99,25 @@ public class Login2 extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                if (s.toString().trim().isEmpty()){
-                    textInputLayout.setPasswordVisibilityToggleEnabled(false);
-                }else{
-                    textInputLayout.setPasswordVisibilityToggleEnabled(true);
+                try {
+                    if (passedt.length() == 0){
+                        textInputLayout.setEndIconVisible(false);
+                    }else{
+                        textInputLayout.setPasswordVisibilityToggleEnabled(true);
+                        textInputLayout.setEndIconVisible(true);
+
+                    }
+                    if (!emailedt.getText().toString().trim().isEmpty() && !s.toString().trim().isEmpty()){
+                        loginbtn.setEnabled(true);
+                        loginbtn.setTextColor(getResources().getColor(android.R.color.white));
+                    }else{
+                        loginbtn.setEnabled(false);
+                        loginbtn.setTextColor(getResources().getColor(R.color.txtdisabled));
+                    }
+                }catch (Exception err){
+
                 }
-                if (!emailedt.getText().toString().trim().isEmpty() && !s.toString().trim().isEmpty()){
-                    loginbtn.setEnabled(true);
-                    loginbtn.setTextColor(getResources().getColor(android.R.color.white));
-                }else{
-                    loginbtn.setEnabled(false);
-                    loginbtn.setTextColor(getResources().getColor(R.color.txtdisabled));
-                }
+
             }
 
             @Override

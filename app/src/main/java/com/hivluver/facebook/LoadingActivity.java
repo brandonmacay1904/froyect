@@ -54,10 +54,10 @@ public class LoadingActivity extends AppCompatActivity {
                 textView.setVisibility(View.INVISIBLE);
                 final KAlertDialog progressDialog = new KAlertDialog(LoadingActivity.this);
                 //progressDialog.getProgressHelper().setBarColor(Color.parseColor("#A5DC86"));
-                progressDialog.setTitleText("Error al entrar");
-                progressDialog.setContentText("No se puede iniciar sesión. Comprueba tu conexión de red.");
+                progressDialog.setTitleText(getResources().getString(R.string.error_al_entrar));
+                progressDialog.setContentText(getResources().getString(R.string.no_se_puede_iniciar_sesi_n_comprueba_tu_conexi_n_de_red));
                 progressDialog.setCancelable(false);
-                progressDialog.setConfirmText("Aceptar");
+                progressDialog.setConfirmText(getResources().getString(R.string.aceptar));
                 progressDialog.confirmButtonColor(R.color.azulfuerte);
                 progressDialog.setConfirmClickListener(new KAlertDialog.KAlertClickListener() {
                     @Override

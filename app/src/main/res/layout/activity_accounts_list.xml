@@ -13,8 +13,9 @@
         android:title="@string/cuentas_hackeadas"
         android:background="@color/azulfuerte"
         android:titleTextColor="@android:color/white"
-        />
+        tools:targetApi="m" />
     <androidx.recyclerview.widget.RecyclerView
+        tools:listitem="@layout/item_accounts"
         android:id="@+id/rv"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
